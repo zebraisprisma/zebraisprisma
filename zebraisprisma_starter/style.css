@@ -1,0 +1,35 @@
+:root{
+  --bg:#0f0f10;
+  --panel:#121214;
+  --muted:#9aa0a6;
+  --accent:#e6e6e6;
+  --wrap:1100px;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  background:var(--bg);
+  color:var(--accent);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:2rem}
+.site-header{background:var(--panel);border-bottom:1px solid rgba(255,255,255,0.03)}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;padding:1rem 2rem}
+.logo{margin:0;font-size:1rem;letter-spacing:1px}
+.main-nav a{color:var(--muted);margin-left:1rem;text-decoration:none}
+.main-nav a:hover{color:var(--accent)}
+.hero{padding:3rem 0;text-align:center}
+.hero h2{font-size:2rem;margin:0 0 0.5rem}
+.lede{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;margin-top:1rem}
+.tile{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:2rem;border-radius:6px;min-height:120px;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted)}
+.photo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.photo-grid img{width:100%;height:auto;display:block;border-radius:6px}
+.site-footer{border-top:1px solid rgba(255,255,255,0.03);padding:1rem 0;margin-top:2rem;color:var(--muted);text-align:center}
+@media (max-width:640px){
+  .site-header .wrap{flex-direction:column;gap:0.5rem}
+  .main-nav a{margin:0 0.5rem}
+}
