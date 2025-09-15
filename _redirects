@@ -1,0 +1,3 @@
+# Example redirects file for Netlify (place in repo root)
+# Redirect root to www if you later want that behavior, or set custom redirects:
+# /old-page   /new-page   301
